@@ -3,6 +3,9 @@ import NavBar from './sections/NavBar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Clients from './sections/Clients'
+import Contact from './sections/Contact'
+import { ToastContainer } from 'react-toastify'
 
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
       <Hero/>
       <About/>
       <Projects/>
+      <Clients/>
+      <Contact/>
+      <ToastContainer/>
     </main>
   )
 }
