@@ -1,0 +1,66 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1C21;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1C1C21;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="pGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E4E4E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E4E4E6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadowGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#E4E4E6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="64" height="64" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle hexagon grid pattern (sophisticated) -->
+  <g opacity="0.08" stroke="#E4E4E6" stroke-width="0.5" fill="none">
+    <polygon points="8,4 12,2 16,4 16,8 12,10 8,8"/>
+    <polygon points="24,8 28,6 32,8 32,12 28,14 24,12"/>
+    <polygon points="40,12 44,10 48,12 48,16 44,18 40,16"/>
+    <polygon points="16,24 20,22 24,24 24,28 20,30 16,28"/>
+    <polygon points="32,28 36,26 40,28 40,32 36,34 32,32"/>
+    <polygon points="48,32 52,30 56,32 56,36 52,38 48,36"/>
+  </g>
+  
+  <!-- Main P letter - bold and powerful -->
+  <g filter="url(#shadowGlow)">
+    <!-- Vertical stem -->
+    <rect x="16" y="14" width="4" height="36" rx="2" fill="url(#pGradient)"/>
+    
+    <!-- Top horizontal -->
+    <rect x="16" y="14" width="14" height="4" rx="2" fill="url(#pGradient)"/>
+    
+    <!-- Bowl curve - creates the senior, established look -->
+    <path d="M 30 14 Q 36 14 36 24 Q 36 32 28 32 L 20 32" 
+          fill="none" stroke="url(#pGradient)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Accent lines showing experience/hierarchy (senior indicator) -->
+  <g opacity="0.6" stroke="#E4E4E6" stroke-width="1.5" stroke-linecap="round">
+    <!-- Experience bars -->
+    <line x1="44" y1="22" x2="56" y2="22"/>
+    <line x1="44" y1="28" x2="58" y2="28"/>
+    <line x1="44" y1="34" x2="56" y2="34"/>
+  </g>
+  
+  <!-- Decorative corner accent (mastery indicator) -->
+  <g opacity="0.7" fill="url(#pGradient)" filter="url(#glow)">
+    <circle cx="56" cy="10" r="2"/>
+    <circle cx="50" cy="10" r="1.5"/>
+    <circle cx="56" cy="16" r="1.5"/>
+  </g>
+</svg>

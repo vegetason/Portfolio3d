@@ -4,7 +4,7 @@ import { clientReviews } from "../constants"
 const Clients = () => {
   return (
     <section className="c-spade my-20">
-        <h3 className="head-text"> Hear from My Clients</h3>
+        <h3 className="head-text"> What People Say About My Work</h3>
         <div className="client-container">
             {clientReviews.map(({id,name,review,img,position})=>(
                 <div key={id} className="client-review ">

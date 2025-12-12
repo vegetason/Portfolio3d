@@ -6,7 +6,6 @@ const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
     const [globeReady, setGlobeReady] = useState(false);
     const globeRef = useRef();
-    const containerRef = useRef();
     const handleCopy = () => {
         navigator.clipboard.writeText("irakozepaulin12@gmail.com");
         setHasCopied(true);
@@ -57,8 +56,8 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Hi I'm Paulin</p>
                             <p className="grid-subtext">
-                                With 12 years of experience, I have honed skills in frontend and
-                                backend development,with a focus on animated 3D websites.
+                                Full-stack developer skilled in React, Node.js, SQL, 
+                                and Next.js, delivering clean UIs and dependable backends.
                             </p>
                         </div>
                     </div>

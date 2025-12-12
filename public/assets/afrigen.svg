@@ -1,0 +1,10 @@
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a2e" stroke="#b366ff" stroke-width="2"/>
+  
+  <!-- Main text AG -->
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#b366ff" text-anchor="middle" dominant-baseline="middle" letter-spacing="-2">
+    AG
+  </text>
+</svg>
